@@ -79,7 +79,7 @@ test('error handling strings', (expect) => {
     const firstVal = 'p';
     const secondVal = 'q';
     const indexVal = 0; //signifies addition operation index
-    const expectedVal = "ERROR";
+    const expectedVal = 'ERROR';
 
     //Act 
     // Call the function you're testing and set the result to a const
