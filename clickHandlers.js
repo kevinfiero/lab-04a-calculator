@@ -1,4 +1,4 @@
-import { logic, resetValues } from "./mathUtils.js";
+import { logic, resetValues } from './mathUtils.js';
 
 const outputVal = document.getElementById('output');
 
