@@ -1,36 +1,34 @@
-const firstVal = document.getElementById('first');
-const secondVal = document.getElementById('second');
-const operatorVal = document.getElementById('operator');
 
-export function logic() {
+
+export function logic(firstVal, secondVal, indexVal) {
 
     let result;
-    const indexVal = operatorVal.options[operatorVal.selectedIndex].value;
-    
+
     if (Number(indexVal) === 0) {
-    
-        result = Number(firstVal.value) + Number(secondVal.value);
-    
+
+        result = Number(firstVal) + Number(secondVal);
+        
     } else if (Number(indexVal) === 1) {
     
-        result = Number(firstVal.value) - Number(secondVal.value);
+        result = Number(firstVal) - Number(secondVal);
     
     } else if (Number(indexVal) === 2) {
     
-        result = Number(firstVal.value) * Number(secondVal.value);
+        result = Number(firstVal) * Number(secondVal);
     
     } else if (Number(indexVal) === 3) {
     
-        result = Number(firstVal.value) / Number(secondVal.value);
+        result = Number(firstVal) / Number(secondVal);
     }
-    
-    if (isNaN(result) || firstVal.value === '' || secondVal.value === '') {
+
+    if (isNaN(result) || firstVal === '' || secondVal === '') {
         result = 'ERROR';
     }
     return result;
 }
 
-export function resetValues() {
+export function resetValues(firstVal,secondVal) {
+    
     firstVal.value = '';
     secondVal.value = '';
 }
