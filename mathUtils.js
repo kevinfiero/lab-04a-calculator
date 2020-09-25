@@ -27,7 +27,7 @@ export function logic(firstVal, secondVal, indexVal) {
     return result;
 }
 
-export function resetValues(firstVal,secondVal) {
+export function resetValues(firstVal, secondVal) {
     
     firstVal.value = '';
     secondVal.value = '';
