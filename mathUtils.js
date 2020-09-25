@@ -1,5 +1,3 @@
-
-
 export function logic(firstVal, secondVal, indexVal) {
 
     let result;
@@ -27,8 +25,3 @@ export function logic(firstVal, secondVal, indexVal) {
     return result;
 }
 
-export function resetValues(firstVal, secondVal) {
-    
-    firstVal.value = '';
-    secondVal.value = '';
-}
